@@ -7,6 +7,7 @@
 GET     /                           controllers.HomeController.index
 GET     /:name                      controllers.HomeController.hello(name: String)
 GET     /:name/:age                 controllers.HomeController.helloAge(name: String, age: Int)
+POST    /user/addUser               controllers.Users.addUser
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
